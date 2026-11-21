@@ -336,13 +336,14 @@ void xu_ly_H1()
       RT(25);
       DT(8);
       LbGripper.moveTo(60);
+      DL(8);
       RP(25);
       distance = 300;
       followLine();
       RT(25);
-      DT(35);
+      DT(25);
       LbGripper.moveTo(0);
-      DL(35);
+      DL(25);
       RT(110);
       distance = 300;
       followLine();
