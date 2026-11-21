@@ -242,10 +242,10 @@ void den_diemchuan1()
 {
   DT(11);
   RT(25);
-  distance = 320;
+  distance = 300;
   followLine();
   RT(60);
-  distance = 320;
+  distance = 300;
   followLine();
 
 
@@ -269,20 +269,21 @@ void xu_ly_H1()
     {
       
 
-      distance = 360;
+      distance = 380;
       followLine();
       RT(60);
-      DT(32);
+      DT(30);
 
        
-      LbGripper.moveTo(90);
-      DL(32);
-      DT(60);
-      distance = 360;
+      LbGripper.moveTo(60);
+      DL(30);
+      RT(60);
+      distance = 380;
       followLine();
       RP(110);
-      DT(8);
-      DL(8);
+      DT(13);
+      LbGripper.moveTo(0);
+      DL(13);
       RP(110);
 
 
@@ -292,14 +293,39 @@ void xu_ly_H1()
 
     else if (mau == "Green")
     {
-        
+      
+      
+
+      distance = 470;
+      followLine();
+      RT(12);
+      DT(15);
+      LbGripper.moveTo(60);
+      DL(15);
+      RT(128);
+      distance = 470;
+      followLine();
+      RP(110);
+      DT(13);
+      LbGripper.moveTo(0);
+      DL(13);
+      RP(110);
+      
 
         
     }
 
     else if (mau == "Purple")
     {
-        
+      distance = 630;
+      followLine();
+      LbGripper.moveTo(60);
+      DL(63);
+      RT(25);
+      DT(13);
+      LbGripper.moveTo(0);
+      DL(13);
+      RP(110);
 
        
     }
@@ -307,6 +333,22 @@ void xu_ly_H1()
     else
     {
      // Red / Yellow
+      RT(25);
+      DT(8);
+      LbGripper.moveTo(60);
+      RP(25);
+      distance = 300;
+      followLine();
+      RT(25);
+      DT(35);
+      LbGripper.moveTo(0);
+      DL(35);
+      RT(110);
+      distance = 300;
+      followLine();
+      RT(60);
+
+
 
         
 
@@ -445,6 +487,7 @@ void loop()
 {
   LbMission.begin(TB1A + TB1B);
   speed = 2000; // Cai dat mot lan cho toan bo cac doan followLine()
+  den_diemchuan1();
     den_H1();
     xu_ly_H1();
   den_F3();
