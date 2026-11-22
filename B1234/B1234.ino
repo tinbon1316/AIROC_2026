@@ -500,7 +500,7 @@ void xu_ly_B2()
 
   }
 }
-void den_C1()
+void den_B3()
 {
   // Tiep can khoi o nhiem C1
   re_trai(110);
@@ -509,7 +509,7 @@ void den_C1()
   mau = Obj_detectColor();
   LbDelay(500);
 }
-void xu_ly_C1()
+void xu_ly_B3()
 {
 
   if (mau == "Purple")
@@ -519,104 +519,93 @@ void xu_ly_C1()
 
     // Lui khoi vi tri C1
     di_lui(8);
-    re_phai(75);
+    re_trai(25);
 
     // Di ve huong khu luu tru S3
     distance = 300;
     followLine();
 
-    re_phai(60);
-    distance = 620;
-    followLine();
-
     re_trai(60);
     distance = 300;
     followLine();
 
-    // Tiep can va gap khoi Purple tai S3
-    re_trai(60);
-    di_thang(10);
-    LbGripper.moveTo(90);
+    re_phai(60);
+    
+    distance = 300;
+    followLine();
 
-    // Lui ra khoi S3
-    di_lui(10);
+    LbGripper.moveTo(90);
     re_trai(155);
 
     // Mang khoi Purple quay ve khu C
     distance = 300;
     followLine();
 
-    re_phai(60);
-    distance = 620;
+    re_trai(60);
+    
+    distance = 300;
     followLine();
 
-    re_trai(60);
+    re_phai(60);
+    
     distance = 300;
     followLine();
 
     // Dua khoi trung hoa vao khu C
-    re_trai(60);
-    di_thang(13);
+    re_trai(110);
     LbGripper.moveTo(0);
+    di_thang(13);
 
     // Di ve diem chuan P3
     di_lui(13);
-    re_phai(25);
-
-    distance = 300;
-    followLine();
+    re_trai(25);
   }
 
   else if (mau == "Green")
   {
-    // C1 - GREEN: lay khoi trung hoa tai S6
-
     di_lui(8);
-    re_phai(25);
+    re_trai(25);
 
-    distance = 640;
+    // Di ve huong khu luu tru S3
+    distance = 300;
     followLine();
 
     re_trai(60);
     distance = 300;
     followLine();
 
-    // Tiep can S6
-    re_trai(60);
-    distance = 300;
-    followLine();
-
-    re_phai(25);
-    di_thang(10);
-    LbGripper.moveTo(90);
-
-    // Mang khoi Green ve C
-    di_lui(10);
-    re_phai(150);
-
-    distance = 300;
-    followLine();
-
-    re_trai(60);
-    distance = 620;
-    followLine();
-
-    re_trai(60);
-    distance = 300;
-    followLine();
-
-    // Tha khoi trung hoa vao C
-    re_trai(60);
-    di_thang(13);
-    LbGripper.moveTo(0);
-
-    // Huong ve diem chuan P3
-    di_lui(13);
-    re_phai(25);
-
-    distance = 630;
-    followLine();
     re_phai(60);
+    
+    distance = 200;
+    followLine();
+
+    re_trai(16);
+    di_thang(10);
+    LbGripper.moveTo(60);
+    di_lui(10);
+    re_trai(110);
+
+    // Mang khoi Purple quay ve khu C
+    distance = 200;
+    followLine();
+
+    re_trai(60);
+    
+    distance = 300;
+    followLine();
+
+    re_phai(60);
+    
+    distance = 300;
+    followLine();
+
+    // Dua khoi trung hoa vao khu C
+    re_trai(110);
+    LbGripper.moveTo(0);
+    di_thang(13);
+    // Di ve diem chuan P3
+    di_lui(13);
+    re_trai(25);
   }
 
   else if (mau == "Blue")
@@ -624,101 +613,91 @@ void xu_ly_C1()
     // C1 - BLUE: lay khoi trung hoa tai S4
 
     di_lui(8);
-    re_phai(25);
+    re_trai(25);
 
-    distance = 640;
-    followLine();
-
-    re_trai(60);
-    distance = 300;
-    followLine();
-
-    // Di den S4
-    re_trai(60);
+    // Di ve huong khu luu tru S3
     distance = 300;
     followLine();
 
     re_trai(60);
-    distance = 260;
+    
+    distance = 550;
     followLine();
 
-    // Gap khoi Blue
-    re_trai(15);
+    re_phai(16);
     di_thang(10);
-    LbGripper.moveTo(90);
-
-    // Mang khoi Blue ve C
+    LbGripper.moveTo(60);
     di_lui(10);
-    re_trai(160);
-
-    distance = 300;
+    re_phai(120);
+    
+    distance = 550;
     followLine();
 
     re_phai(60);
-    distance = 620;
-    followLine();
-
-    re_trai(60);
+    
     distance = 300;
     followLine();
 
-    // Tha khoi trung hoa vao C
-    re_trai(60);
-    di_thang(13);
+    // Dua khoi trung hoa vao khu C
+    re_trai(110);
     LbGripper.moveTo(0);
+    di_thang(13);
 
-    // Huong ve diem chuan P3
+    // Di ve diem chuan P3
     di_lui(13);
-    re_phai(25);
-
-    distance = 630;
-    followLine();
-    re_phai(60);
+    re_trai(25);
   }
 
   else
   {
-    // C1 - RED / YELLOW / MYSTERY
+    // C1 - RED / YELLOW
     // Gap khoi o nhiem dua ve CRL
 
     LbGripper.moveTo(90);
     di_lui(8);
-    re_phai(25);
+    re_trai(25);
 
     // Ra duong line tu khu C
-    distance = 640;
+    distance = 300;
     followLine();
 
     // Di ve phia CRL
     re_trai(60);
-    distance = 320;
+    
+    distance = 300;
     followLine();
 
     // Dua khoi vao CRL
-    re_phai(43);
-    di_thang(12);
+    re_phai(25);
+    di_thang(10);
     LbGripper.moveTo(0);
 
     // Lui ra khoi CRL
-    di_lui(12);
+    di_lui(10);
     re_phai(110);
 
+    distance = 300;
+    followLine();
+  
+    re_phai(60);
     // Di ve phia khu C
     distance = 300;
     followLine();
+
+    re_phai(155);
   }
 }
-void den_E2()
+void den_B1()
 {
   // Tu P3 tiep can E2
-  re_phai(132);
+  re_phai(25);
   di_thang(8);
 
   mau = Obj_detectColor();
   LbDelay(500);
 }
 
-void xu_ly_E2()
+void xu_ly_B1()
 {
 
   if (mau == "Purple")
@@ -728,45 +707,55 @@ void xu_ly_E2()
 
     // 1. Roi vi tri E2
     di_lui(8);
-    re_phai(25);
+    re_trai(25);
 
     // Di theo line phia duoi ve huong S3
     distance = 300;
     followLine();
 
     re_phai(60);
+    
     distance = 300;
     followLine();
 
-    // 2. Gap khoi Purple tai S3
-    LbGripper.moveTo(90);
+    re_trai(60);
+    
+    distance = 300;
+    followLine();
 
-    // 3. Mang khoi trung hoa ve E
-    re_phai(155);
+    re_phai(60);
+  
+    distance = 300;
+    followLine();
+        
+    LbGripper.moveTo(60);
+    re_trai(155);
 
     distance = 300;
     followLine();
 
     re_trai(60);
+        
     distance = 300;
     followLine();
-    // 4. Dua khoi Purple vao E
-    re_phai(110);
-    di_thang(13);
-    LbGripper.moveTo(0);
 
-    // 5. Roi E va quay ve CRL
-    di_lui(13);
-    re_phai(25);
-
-    distance = 310;
+    re_phai(60);
+    
+    distance = 300;
     followLine();
 
-    // 6. Di vao CRL
-    re_phai(25);
-    di_thang(12);
+    re_trai(60);
+    
+    distance = 300;
+    followLine();
 
-    LbMotion.stopAndWait();
+    re_trai(110);
+    LbGripper.moveTo(0);
+    di_thang(13);
+
+    // Ve diem chuan P1
+    di_lui(13);
+    re_trai(25);
   }
 
   else if (mau == "Green")
@@ -777,33 +766,34 @@ void xu_ly_E2()
     di_lui(8);
     re_phai(25);
 
-    distance = 260;
+    distance = 300;
     followLine();
 
     // Di den khu vuc S6
-    re_phai(60);
-    distance = 620;
+    re_trai(60);
+    
+    distance = 630;
     followLine();
 
     re_phai(60);
-    distance = 220;
+    distance = 200;
     followLine();
 
     // Tiep can va gap Green
-    re_phai(25);
+    re_trai(16);
     di_thang(10);
     LbGripper.moveTo(90);
 
     // Lui khoi S6
     di_lui(10);
-    re_phai(150);
+    re_trai(120);
 
     // Mang Green ve E
-    distance = 220;
+    distance = 200;
     followLine();
 
     re_trai(60);
-    distance = 620;
+    distance = 630;
     followLine();
 
     re_phai(60);
@@ -811,24 +801,14 @@ void xu_ly_E2()
     followLine();
 
     // Tha khoi vao khu E
-    re_phai(25);
-    di_thang(13);
+    re_phai(110);
     LbGripper.moveTo(0);
+    di_thang(13);
 
     // Quay ve CRL
     di_lui(13);
-    re_trai(110);
+    re_trai(25);
 
-    distance = 300;
-    followLine();
-
-    re_phai(60);
-    distance = 300;
-    followLine();
-
-    re_phai(60);
-    di_thang(12);
-    LbMotion.stopAndWait();
   }
 
   else if (mau == "Blue")
@@ -844,57 +824,33 @@ void xu_ly_E2()
 
     // Di den khu vuc S4
     re_trai(60);
-    distance = 620;
+    
+    distance = 880;
     followLine();
 
-    re_phai(60);
-    distance = 300;
-    followLine();
-
-    re_trai(60);
-    distance = 260;
-    followLine();
-
-    // Tiep can va gap Blue
-    re_trai(15);
+    re_phai(16);
     di_thang(10);
-    LbGripper.moveTo(90);
-
-    // Lui khoi S4
+    LbGripper.moveTo(60);
     di_lui(10);
-    re_trai(160);
-
+    re_phai(120);
     // Mang Blue ve E
-    distance = 300;
+    
+    distance = 880;
     followLine();
 
     re_phai(60);
-    distance = 620;
-    followLine();
-
-    re_phai(60);
+    
     distance = 300;
     followLine();
 
-    // Tha khoi vao khu E
-    re_phai(25);
-    di_thang(13);
+    re_phai(110);
     LbGripper.moveTo(0);
+    di_thang(13);
 
     // Quay ve CRL
     di_lui(13);
-    re_trai(110);
+    re_trai(25);
 
-    distance = 300;
-    followLine();
-
-    re_phai(60);
-    distance = 300;
-    followLine();
-
-    re_phai(60);
-    di_thang(12);
-    LbMotion.stopAndWait();
   }
 
   else
@@ -912,12 +868,28 @@ void xu_ly_E2()
     followLine();
 
     // Tiep can CRL - doan thu nghiem
+    re_trai(60);
+    
+    distance = 630;
+    followLine();
+
     re_phai(25);
     di_thang(12);
-
+    
     // Tha khoi trong CRL
     LbGripper.moveTo(0);
+    di_lui(12);
+    re_phai(110);
 
+    distance = 630;
+    followLine();
+
+    re_phai(60);
+
+    distance = 300;
+    followLine();
+
+    re_phai(60);
     // Can chinh lai vi tri dung cuoi cung
     LbMotion.stopAndWait();
   }
@@ -936,7 +908,7 @@ void loop()
   LbMission.begin(TB1A + TB1B);
   
   speed = 2000; // Cai dat mot lan cho toan bo cac doan followLine()
-  den_B2();
-  xu_ly_B2();
+  den_B1();
+  xu_ly_B1();
   LbMission.end();
 }
