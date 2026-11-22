@@ -253,18 +253,10 @@ void den_diemchuan1()
 
 void den_H1()
 {
-  DL(18);
-  RT(60);
-  DT(5);
-
+  RT(110);
+  DT(22);
   mau = Obj_detectColor();
   LbDelay(500);
-
-  DL(5);
-  RP(60);
-  distance = 180;
-  followLine();
-  RT(60);
 
   
 
@@ -274,8 +266,11 @@ void xu_ly_H1()
 {
     if (mau == "Blue")
     {
-      
-
+      LbGripper.moveTo(60);
+      DL(3);
+      LbGripper.moveTo(0);
+      DL(15);
+      RP(25);
       distance = 380;
       followLine();
       RT(60);
@@ -300,7 +295,11 @@ void xu_ly_H1()
 
     else if (mau == "Green")
     {
-      
+      LbGripper.moveTo(60);
+      DL(3);
+      LbGripper.moveTo(0);
+      DL(15);
+      RP(25);
       
 
       distance = 470;
@@ -324,6 +323,11 @@ void xu_ly_H1()
 
     else if (mau == "Purple")
     {
+      LbGripper.moveTo(60);
+      DL(3);
+      LbGripper.moveTo(0);
+      DL(15);
+      RP(25);
       distance = 630;
       followLine();
       LbGripper.moveTo(60);
@@ -340,18 +344,11 @@ void xu_ly_H1()
     else
     {
      // Red / Yellow
-      RT(60);
-      distance = 200;
-      followLine();
-      RP(60);
-      DT(5); 
 
+      
       LbGripper.moveTo(60);
-      DL(5);
-      RP(60);
-      distance = 200;
-      followLine();
-      RT(60);
+      DL(22);
+      RP(25);
       distance = 300;
       followLine();
       RT(25);
@@ -362,8 +359,6 @@ void xu_ly_H1()
       distance = 300;
       followLine();
       RT(60);
-
-
 
 
 
