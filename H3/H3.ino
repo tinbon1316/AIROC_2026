@@ -276,7 +276,7 @@ void xu_ly_H3()
     {
       
 
-      distance = 380;
+      distance = 400;
       followLine();
       RT(60);
       DT(30);
@@ -285,7 +285,7 @@ void xu_ly_H3()
       LbGripper.moveTo(60);
       DL(30);
       RT(60);
-      distance = 380;
+      distance = 400;
       followLine();
       RP(60);
       distance = 200;

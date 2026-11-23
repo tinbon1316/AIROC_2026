@@ -253,20 +253,13 @@ void den_diemchuan1()
 
 void den_H1()
 {
-  RT(60);
-  distance = 200;
-  followLine();
-  RT(60);
-  DT(3);
-
+  RP(110);
+  DT(5);
   mau = Obj_detectColor();
   LbDelay(500);
-  DL(3);
 
-  RP(60);
-  DL(20);
-
-  
+  DL(5);
+  RP(110);
 
 }
 
@@ -276,7 +269,7 @@ void xu_ly_H1()
     {
       
 
-      distance = 380;
+      distance = 400;
       followLine();
       RT(60);
       DT(30);
@@ -285,15 +278,13 @@ void xu_ly_H1()
       LbGripper.moveTo(60);
       DL(30);
       RT(60);
-      distance = 150;
+      distance = 400;
       followLine();
-      RP(60);
-      DT(7);
+      RP(25);
+      DT(13);
       LbGripper.moveTo(0);
-      DL(7);
-      RP(60);
-      DL(20);
-      RP(60);
+      DL(13);
+      RT(110);
 
 
 
@@ -312,15 +303,14 @@ void xu_ly_H1()
       LbGripper.moveTo(60);
       DL(15);
       RT(128);
-      distance = 230;
+      distance = 470;
       followLine();
-      RP(60);
-      DT(7);
+      RP(25);
+      DT(13);
       LbGripper.moveTo(0);
-      DL(7);
-      RP(60);
-      DL(20);
-      RP(60);
+      DL(13);
+      RT(110);
+      
 
         
     }
@@ -330,29 +320,25 @@ void xu_ly_H1()
       distance = 630;
       followLine();
       LbGripper.moveTo(60);
-      DL(40);
-      RT(60);
-      DT(7);
+      DL(63);
+      RT(110);
+      DT(13);
       LbGripper.moveTo(0);
-      DL(7);
-      RP(60);
-      DL(20);
-      RP(60);
-
+      DL(13);
+      RT(110);
        
     }
 
     else
     {
      // Red / Yellow
-      distance = 200;
-      followLine();
-      RT(60);
-      DT(3);
-      LbGripper.moveTo(60);
-      DL(3);
-      RP(60);
+      RT(110);
       DT(8);
+      LbGripper.moveTo(60);
+      DL(8);
+      RP(110);
+      distance = 300;
+      followLine();
       RT(25);
       DT(25);
       LbGripper.moveTo(0);
@@ -361,8 +347,6 @@ void xu_ly_H1()
       distance = 300;
       followLine();
       RT(60);
-
-
 
 
 
