@@ -240,8 +240,6 @@ void followLine() {
 
 void den_D3()
 {
-  distance = 300;
-  followLine();
   RT(25); 
   DT(6);
   mau = Obj_detectColor();
@@ -265,12 +263,9 @@ void xu_ly_D3()
      followLine();
      RT (25);
      DT (10);
-     LbGripper.moveTo(0);
+     LbGripper.moveTo(-30);
      DL (10);
-     RT (105);
-     distance = 300;
-     followLine();
-     RT (173);
+     RP (25);
     }
 
     else if (mau == "Green")
@@ -294,7 +289,7 @@ void xu_ly_D3()
      followLine();
      RT (25);
      DT (10);
-     LbGripper.moveTo(0);
+     LbGripper.moveTo(-30);
      DL (10);
      RP (25);
     }
@@ -309,15 +304,16 @@ void xu_ly_D3()
      distance = 300;
      followLine();
      LbGripper.moveTo(60);
+     DL(15);
      RP (173);
-     distance = 300;
+     distance = 150;
      followLine();
      RT (60);
      distance = 300;
      followLine();
      RT (25);
      DT (10);
-     LbGripper.moveTo(0);
+     LbGripper.moveTo(-30);
      DL (10);
      RP (25);
     }
@@ -332,15 +328,17 @@ void xu_ly_D3()
      followLine();
      RP(25);
      DT (5);
-     LbGripper.moveTo(0);
+     LbGripper.moveTo(-30);
      DL (5);
-     RP (25);
+     RP (110);
+     distance = 300;
+     followLine();
     }
 }
 
 void den_D1()
 {
-  distance = 640;
+  distance = 300;
   followLine();
   RT(110); 
   DT(6);
@@ -354,21 +352,22 @@ void xu_ly_D1()
   {
    DL(6);
    RT(25);
-   distance = 640;
+   distance = 650;
    followLine();
    RP (60);  
    distance = 300;
    followLine();
    LbGripper.moveTo(60);
-   RP (173);
-   distance = 300;
+   DL(12);
+   RP (150);
+   distance = 150;
    followLine();
    RT (60);
-   distance = 640;
+   distance = 650;
    followLine();
    RT (110);
    DT (10);
-   LbGripper.moveTo(0);
+   LbGripper.moveTo(-30);
    DL (10);
    RT(25);
    distance = 300;
@@ -380,7 +379,7 @@ void xu_ly_D1()
     {
      DL(6);
      RT(25);
-     distance = 640;
+     distance = 600;
      followLine();
      RP (60);
      distance = 150;
@@ -394,11 +393,11 @@ void xu_ly_D1()
      distance = 150;
      followLine();
      RT (60);
-     distance = 640;
+     distance = 600;
      followLine();
      RT (110);
      DT (10);
-     LbGripper.moveTo(0);
+     LbGripper.moveTo(-30);
      DL (10);
      RT(25);
      distance = 300;
@@ -420,8 +419,8 @@ void xu_ly_D1()
      followLine();
      RT (110);
      DT (10);
-     LbGripper.moveTo(0);
-     DL (10);
+     LbGripper.moveTo(-30);
+     DL(10);
      RT(25);
      distance = 300;
      followLine();
@@ -447,13 +446,11 @@ void xu_ly_D1()
 
 void den_D4()
 {
+  re_trai(60); 
   distance = 300;
   followLine();
-  RT(60); 
-  distance = 300;
-  followLine();
-  RP(110);
-  DT (6);
+  re_phai(110);
+  di_thang(6);
   mau = Obj_detectColor();
   LbDelay(500);
 }
@@ -462,100 +459,97 @@ void xu_ly_D4()
 {
   if (mau == "Purple")
   {
-   DL(6);
-   RT(200);
+   di_thang(6);
+   di_lui(14);
+   re_trai(200);
    distance = 150;
    followLine();
-   RP (12); 
-   DT(10); 
+   re_phai(12); 
+   di_thang(10); 
    LbGripper.moveTo(60);
-   DL(10);
-   RP(138);
+   di_lui(10);
+   re_phai(138);
    distance = 150;
    followLine();
-   RP (20);
-   DT (10);
-   LbGripper.moveTo(0);
-   DL (10);
-   RP(25);
+   re_phai(20);
+   di_thang(10);
+   LbGripper.moveTo(-30);
+   di_lui(10);
+   re_phai(25);
    distance = 300;
    followLine();
-   RT (60);
+   re_trai(60);
   }
 
   else if (mau == "Green")
   {
-    DL(6);
-    RT(200);
-    distance = 150;
+    di_thang(6);
+    di_lui(14);
+    re_phai(110);
+    distance = 175;
     followLine();
-    RT (25); 
-    DT(20); 
-    RP(95);
-    DT (20);
+    re_trai(25); 
+    di_thang(18); 
+    re_phai(95);
+    di_thang(15);
     LbGripper.moveTo(60);
-    DL(20); 
-    RT(95); 
-    DL(20);
-    RP(190);
-    distance = 150;
+    di_lui(15); 
+    re_phai(30);
+    di_thang(18);
+    re_phai(25);  
+    distance = 175;
     followLine();
-    RP (20);
-    DT (10);
-    LbGripper.moveTo(0);
-    DL (10);
-    RP(25);
+    re_phai(20);
+    di_thang(10);
+    LbGripper.moveTo(-30);
+    di_lui(10);
+    re_phai(25);
     distance = 300;
     followLine();
-    RT(60);
+    re_trai(60);
   }
   
   else if (mau == "Blue")
   {
-    DL(6);
-    RP(30);
+    di_thang(6);
+    di_lui(14);
+    re_phai(30);
     distance = 300;
     followLine();
-    RP (60);
+    re_phai(60);
     distance = 460;
     followLine();
-    RP(12);
-    DT (15);
+    re_phai(12);
+    di_thang(15);
     LbGripper.moveTo(60);
-    DL (15);
-    RT (187);
+    di_lui(15);
+    re_trai(187);
     distance = 460;
     followLine();
-    RT (60);
-    distance = 300;
-    followLine();
-    RP(110);
-    DT (10);
-    LbGripper.moveTo(0);
-    DL (10);
-    RP(25);
-    distance = 300;
-    followLine();
-    RT(60);
+    re_trai(25);
+    di_thang(10);
+    LbGripper.moveTo(-30);
+    di_lui(10);
+    re_phai(25);
   }
     
   else
     {
      // Red / Yellow
      LbGripper.moveTo(60);
-     DL (6);
-     RP(25);
+     di_lui(6);
+     re_phai(25);
      distance = 300;
      followLine();
-     RP(60);
+     re_phai(60);
      distance = 300;
      followLine();
-     RP(25);
-     DT (5);
-     LbGripper.moveTo(0);
-     DL (5);
-     RT (198);
-     distance = 300
+     re_phai(25);
+     di_thang(15);
+     LbGripper.moveTo(-30);
+     di_lui(15);
+     re_trai(198);
+     distance = 300;
      followLine();
     }  
 }
@@ -691,6 +685,7 @@ void xu_ly_D2()
      followLine();
     }  
 }
+
 void setup()
 {
   Leanbot.begin(); // initialize Leanbot
