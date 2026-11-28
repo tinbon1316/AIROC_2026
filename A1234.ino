@@ -289,7 +289,7 @@ void xu_ly_A4()
         re_trai(25);
         di_thang(13);
         di_lui(1);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_lui(10);
         // Ve diem chuan P1
         
@@ -341,7 +341,7 @@ void xu_ly_A4()
         re_trai(25);
         di_thang(13);
         di_lui(1);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_lui(10);
         // Ve diem chuan P1
         
@@ -390,7 +390,7 @@ void xu_ly_A4()
         re_trai(25);
         di_thang(13);
         di_lui(1);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_lui(10);
         // Ve diem chuan P1
         
@@ -420,7 +420,7 @@ void xu_ly_A4()
 
         re_phai(25);
         di_thang(10);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
 
         // Ve diem chuan P1
         di_lui(10);
@@ -433,7 +433,7 @@ void xu_ly_A4()
 
 void den_A2()
 {
-    re_trai(25);
+    re_phai(110);
     di_thang(6);
 
     mau = Obj_detectColor();
@@ -481,11 +481,21 @@ void xu_ly_A2()
 
         re_phai(110);
         
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_thang(13);
         // Ve diem chuan P1
         di_lui(13);
         re_phai(25);
+
+        distance = 300;
+        followLine();
+
+        re_phai(60);
+        
+        distance = 300;
+        followLine();
+
+        re_phai(60);
     }
 
     else if (mau == "Green")
@@ -493,12 +503,22 @@ void xu_ly_A2()
         di_lui(6);
         re_phai(25);
 
-        distance = 630;
+        distance = 300;
+        followLine();
+
+        re_phai(60);
+        
+        distance = 300;
+        followLine();
+
+        re_trai(60);
+        
+        distance = 300;
         followLine();
 
         re_phai(60);
 
-        distance = 540;
+        distance = 200;
         followLine();
 
         re_trai(16);
@@ -507,6 +527,24 @@ void xu_ly_A2()
         di_lui(10);
         re_trai(120);
 
+        distance = 200;
+        followLine();
+
+        re_trai(60);
+        
+        distance = 300;
+        followLine();
+
+        re_phai(60);
+
+        distance = 300;
+        followLine();
+
+        re_trai(60);
+        
+        distance = 300;
+        followLine();
+
         distance = 540;
         followLine();
 
@@ -517,11 +555,21 @@ void xu_ly_A2()
 
         re_phai(110);
         
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_thang(13);
         // Ve diem chuan P1
         di_lui(13);
         re_phai(25);
+
+        distance = 300;
+        followLine();
+
+        re_phai(60);
+        
+        distance = 300;
+        followLine();
+
+        re_phai(60);
     }
 
     else if (mau == "Purple")
@@ -529,32 +577,62 @@ void xu_ly_A2()
         di_lui(6);
         re_phai(25);
 
-        distance = 630;
+        distance = 300;
+        followLine();
+
+        re_phai(60);
+        
+        distance = 300;
+        followLine();
+
+        re_trai(60);
+        
+        distance = 300;
         followLine();
 
         re_phai(60);
 
-        distance = 630;
+        distance = 300;
         followLine();
 
         LbGripper.moveTo(60);
         re_trai(155);
 
-        distance = 630;
+        distance = 300;
         followLine();
 
         re_trai(60);
+        
+        distance = 300;
+        followLine();
 
-        distance = 630;
+        re_phai(60);
+
+        distance = 300;
+        followLine();
+
+        re_trai(60);
+        
+        distance = 300;
         followLine();
 
         re_phai(110);
         
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_thang(13);
         // Ve diem chuan P1
         di_lui(13);
         re_phai(25);
+
+        distance = 300;
+        followLine();
+
+        re_phai(60);
+        
+        distance = 300;
+        followLine();
+
+        re_phai(60);
     }
 
     else
@@ -565,20 +643,29 @@ void xu_ly_A2()
         di_lui(6);
         re_phai(25);
 
-        distance = 780;
+        distance = 300;
         followLine();
 
         re_phai(60);
-        di_thang(43);
-        LbGripper.moveTo(0);
+        
+        distance = 300;
+        followLine();
+
+        re_trai(60);
+        
+        distance = 300;
+        followLine();
+        
+        re_phai(25);
+        di_thang(10);
+        LbGripper.moveTo(-30);
 
         // Ve diem chuan P1
-        di_lui(43);
-        re_phai(60);
+        di_lui(10);
+        re_phai(110);
 
-        distance = 780;
+        distance = 300;
         followLine();
-        re_phai(155);
     }
 }
 
@@ -597,120 +684,147 @@ void xu_ly_A3()
 
   if (mau == "Purple")
   {
-    // C1 - PURPLE
-    // Lay khoi trung hoa tai S3
+        di_lui(6);
+        re_trai(25);
 
-    // Lui khoi vi tri C1
-    di_lui(6);
-    re_trai(110);
+        distance = 630;
+        followLine();
+        
+        re_trai(60);
+        
+        distance = 300;
+        followLine();
 
-    // Di ve huong khu luu tru S3
-    distance = 300;
-    followLine();
+        re_phai(60);
 
-    re_phai(60);
-    
-    distance = 950;
-    followLine();
+        distance = 300;
+        followLine();
 
-    LbGripper.moveTo(60);
-    re_trai(155);
+        LbGripper.moveTo(50);
+        re_trai(155);
 
-    // Mang khoi Purple quay ve khu C
-    distance = 950;
-    followLine();
+        distance = 300;
+        followLine();
 
-    re_trai(60);
-    
-    distance = 300;
-    followLine();
+        re_trai(60);
 
-    // Dua khoi trung hoa vao khu C
-    re_trai(25);
-    LbGripper.moveTo(0);
-    di_thang(13);
+        distance = 300;
+        followLine();
 
-    // Di ve diem chuan P3
-    di_lui(13);
-    re_trai(25);
+        re_phai(60);
+        
+        distance = 630;
+        followLine();
+
+        re_trai(110);
+        di_thang(13);
+        di_lui(1);
+        LbGripper.moveTo(-30);
+        di_lui(10);
+        // Ve diem chuan P1
+        
+        re_trai(25);
+
+        distance = 630;
+        followLine();
+
+        re_phai(60);
   }
 
   else if (mau == "Green")
   {
-    di_lui(6);
-    re_trai(110);
+        di_lui(6);
+        re_trai(25);
 
-    // Di ve huong khu luu tru S3
-    distance = 300;
-    followLine();
+        distance = 630;
+        followLine();
+        
+        re_trai(60);
+        
+        distance = 300;
+        followLine();
 
-    re_phai(60);
-    
-    distance = 880;
-    followLine();
+        re_phai(60);
 
-    re_trai(16);
-    di_thang(10);
-    LbGripper.moveTo(60);
-    di_lui(10);
-    re_trai(110);
+        distance = 200;
+        followLine();
 
-    // Mang khoi Purple quay ve khu C
-    distance = 880;
-    followLine();
+        re_trai(16);
+        di_thang(10);
+        LbGripper.moveTo(50);
+        di_lui(10);
+        re_trai(120);
 
-    re_trai(60);
-    
-    distance = 300;
-    followLine();
+        distance = 200;
+        followLine();
 
-    // Dua khoi trung hoa vao khu C
-    re_trai(25);
-    LbGripper.moveTo(0);
-    di_thang(13);
-    // Di ve diem chuan P3
-    di_lui(13);
-    re_trai(25);
-  }
+        re_trai(60);
+
+        distance = 300;
+        followLine();
+
+        re_phai(60);
+        
+        distance = 630;
+        followLine();
+
+        re_trai(110);
+        di_thang(13);
+        di_lui(1);
+        LbGripper.moveTo(-30);
+        di_lui(10);
+        // Ve diem chuan P1
+        
+        re_trai(25);
+
+        distance = 630;
+        followLine();
+
+        re_phai(60);
+    }
 
   else if (mau == "Blue")
   {
     // C1 - BLUE: lay khoi trung hoa tai S4
 
-    di_lui(6);
-    re_trai(25);
+        di_lui(6);
+        re_trai(25);
 
-    // Di ve huong khu luu tru S3
-    distance = 630;
-    followLine();
+        distance = 630;
+        followLine();
 
-    re_trai(60);
-    
-    distance = 550;
-    followLine();
+        re_trai(60);
+        
+        distance = 540;
+        followLine();
 
-    re_phai(16);
-    di_thang(10);
-    LbGripper.moveTo(60);
-    di_lui(10);
-    re_phai(120);
-    
-    distance = 550;
-    followLine();
+        re_phai(16);
+        di_thang(10);
+        LbGripper.moveTo(50);
+        di_lui(10);
+        re_phai(120);
 
-    re_phai(60);
-    
-    distance = 630;
-    followLine();
+        distance = 540;
+        followLine();
 
-    // Dua khoi trung hoa vao khu C
-    re_trai(110);
-    LbGripper.moveTo(0);
-    di_thang(13);
+        re_phai(60);
+        
+        distance = 630;
+        followLine();
 
-    // Di ve diem chuan P3
-    di_lui(13);
-    re_trai(25);
+        re_trai(110);
+        di_thang(13);
+        di_lui(1);
+        LbGripper.moveTo(-30);
+        di_lui(10);
+        // Ve diem chuan P1
+        
+        re_trai(25);
+
+        distance = 630;
+        followLine();
+
+        re_phai(60);
   }
 
   else
@@ -730,7 +844,7 @@ void xu_ly_A3()
     re_phai(60);
 
     di_thang(80);
-    LbGripper.moveTo(0);
+    LbGripper.moveTo(-30);
 
     // Lui ra khoi CRL
     di_lui(80);
@@ -759,7 +873,7 @@ void xu_ly_A1()
     {
         LbGripper.moveTo(50);
         di_lui(6);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_lui(12);
         re_trai(110);
 
@@ -788,7 +902,7 @@ void xu_ly_A1()
         re_trai(25);
         di_thang(13);
         di_lui(1);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_lui(10);
         // Ve diem chuan P1
         
@@ -804,7 +918,7 @@ void xu_ly_A1()
     {
         LbGripper.moveTo(50);
         di_lui(6);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_lui(12);
         re_trai(110);
 
@@ -843,7 +957,7 @@ void xu_ly_A1()
         re_trai(25);
         di_thang(13);
         di_lui(1);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_lui(10);
         // Ve diem chuan P1
         
@@ -859,7 +973,7 @@ void xu_ly_A1()
     {
         LbGripper.moveTo(50);
         di_lui(6);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_lui(12);
         re_trai(110);
 
@@ -895,7 +1009,7 @@ void xu_ly_A1()
         re_trai(25);
         di_thang(13);
         di_lui(1);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
         di_lui(10);
         // Ve diem chuan P1
         
@@ -925,7 +1039,7 @@ void xu_ly_A1()
 
         re_phai(25);
         di_thang(10);
-        LbGripper.moveTo(0);
+        LbGripper.moveTo(-30);
 
         // Ve diem chuan P1
         di_lui(10);
@@ -949,7 +1063,7 @@ void loop()
   LbMission.begin(TB1A + TB1B);
   
   speed = 2000; // Cai dat mot lan cho toan bo cac doan followLine()
-  den_A1();
-  xu_ly_A1();
+  den_A4();
+  xu_ly_A4();
   LbMission.end();
 }
